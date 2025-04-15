@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Box | My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Portfolio</div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search this page...">
+                <button id="searchButton">Search</button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="birthplace.html">Birth Place</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Technical Skills</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="text-box.html" class="active">Text Box</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-container text-box-page" style="background-image: url('images/bg.png')">
+        <h1 class="page-title">Text Analysis Tool</h1>
+        
+        <div class="text-box-container">
+            <div class="input-section">
+                <textarea id="textInput" placeholder="Enter text here (supports more than 10,000 words)..." rows="10"></textarea>
+                <div class="button-group">
+                    <button id="analyzeButton" class="primary-button">Analyze Text</button>
+                    <button id="clearButton" class="secondary-button">Clear</button>
+                    <button id="sampleTextButton" class="secondary-button">Load Sample Text</button>
+                </div>
+            </div>
+            
+            <div class="results-section">
+                <h2>Analysis Results</h2>
+                
+                <div class="result-card">
+                    <h3>Basic Statistics</h3>
+                    <div id="basicStats" class="result-content">
+                        <p>Enter text and click "Analyze Text" to see statistics.</p>
+                    </div>
+                </div>
+                
+                <div class="result-card">
+                    <h3>Pronouns Count</h3>
+                    <div id="pronounsCount" class="result-content">
+                        <p>Enter text and click "Analyze Text" to see pronoun counts.</p>
+                    </div>
+                </div>
+                
+                <div class="result-card">
+                    <h3>Prepositions Count</h3>
+                    <div id="prepositionsCount" class="result-content">
+                        <p>Enter text and click "Analyze Text" to see preposition counts.</p>
+                    </div>
+                </div>
+                
+                <div class="result-card">
+                    <h3>Indefinite Articles Count</h3>
+                    <div id="articlesCount" class="result-content">
+                        <p>Enter text and click "Analyze Text" to see indefinite article counts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="text-analysis.js"></script>
+</body>
+</html>
