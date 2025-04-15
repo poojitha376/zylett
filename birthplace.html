@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birth Place | My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Portfolio</div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search this page...">
+                <button id="searchButton">Search</button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="birthplace.html" class="active">Birth Place</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Technical Skills</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-container birthplace-page" style="background-image: url('images/bg.png')">
+        <h1 class="page-title">Birth Place</h1>
+        
+        <div class="slideshow-container">
+            <div class="slides">
+                <div class="slide fade">
+                    <img src="images/1.webp" alt="Bhadra Dam on Republic Day">
+                    <div class="slide-caption">Bhadra Dam (Republic Day)</div>
+                </div>
+                <div class="slide fade">
+                    <img src="images/2.jpeg" alt="Bhadra Dam General View">
+                    <div class="slide-caption">Bhadra Dam (General)</div>
+                </div>
+                <div class="slide fade">
+                    <img src="images/3.jpg" alt="Bhadra Sanctuary">
+                    <div class="slide-caption">Bhadra Sanctuary</div>
+                </div>
+                <div class="slide fade">
+                    <img src="images/4.jpg" alt="Habbe Falls">
+                    <div class="slide-caption">Habbe Falls</div>
+                </div>
+                <div class="slide fade">
+                    <img src="images/5.jpg" alt="The Sunset View">
+                    <div class="slide-caption">The Sunset View</div>
+                </div>
+                <div class="slide fade">
+                    <img src="images/6.jpeg" alt="The Paper Mill">
+                    <div class="slide-caption">The Paper Mill</div>
+                </div>
+                <div class="slide fade">
+                    <img src="images/7.webp" alt="Jog Falls">
+                    <div class="slide-caption">Jog Falls</div>
+                </div>
+                <div class="slide fade">
+                    <img src="images/8.jpg" alt="Temples">
+                    <div class="slide-caption">Temples</div>
+                </div>
+                <div class="slide fade">
+                    <img src="images/9.jpg" alt="Wildlife">
+                    <div class="slide-caption">Wildlife</div>
+                </div>
+            </div>
+
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+        
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

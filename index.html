@@ -3,82 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Website</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#cv">CV</a></li>
-        </ul>
-    </nav>
-
     <header>
-        <h1>Your Name</h1>
-        <p>Your Professional Tagline</p>
+        <nav>
+            <div class="logo">Portfolio</div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search this page...">
+                <button id="searchButton">Search</button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="birthplace.html">Birth Place</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Technical Skills</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="about">
-        <div class="profile">
-            <img src="images/profile.jpg" alt="Your Name">
-            <div class="bio">
-                <h2>About Me</h2>
-                <!-- REPLACE THIS PARAGRAPH WITH YOUR BIO -->
-                <p>I'm a passionate developer with experience in web technologies. Born and raised in [Your Birthplace], 
-                I love creating meaningful solutions through code. My journey began... [add more personal details]</p>
+    <main class="home-container">
+        <div class="profile-section">
+            <div class="profile-image">
+                <img src="images/p.jpg" alt="My Profile Picture">
+            </div>
+            <div class="profile-intro">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Enthusiastic CSE undergrad at IIITH with a vision to build a top 100 global tech company, 
+                driven by passion, discipline, and innovation. From JEE AIR 2832 (Mains) & 5320 (Adv) 
+                to building systems and solving problems, I thrive in high-energy, purposeful environments.</p>
             </div>
         </div>
-        
-        <h3>My Hometown</h3>
-        <div class="gallery">
-            <!-- REPLACE THESE IMAGE SOURCES WITH YOUR LOCAL PICTURES -->
-            <img src="images/birthplace1.jpg" alt="Birthplace 1">
-            <img src="images/birthplace2.jpg" alt="Birthplace 2">
-            <img src="images/birthplace3.jpg" alt="Birthplace 3">
-        </div>
-    </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <!-- UPDATE THESE EDUCATION DETAILS -->
-        <div class="timeline">
-            <div class="item">
-                <h3>Degree Name</h3>
-                <p>University/School Name</p>
-                <p>Year Range (e.g., 2020-2024)</p>
-                <ul>
-                    <li>Achievement 1</li>
-                    <li>Achievement 2</li>
-                </ul>
-            </div>
-            <!-- ADD MORE EDUCATION ITEMS AS NEEDED -->
+        <div class="boxes-container">
+            <a href="about.html" class="box">
+                <h3>About Me</h3>
+                <p>Learn more about who I am and what drives me</p>
+            </a>
+            <a href="birthplace.html" class="box">
+                <h3>Birth Place</h3>
+                <p>Discover the beauty of where I come from</p>
+            </a>
+            <a href="education.html" class="box">
+                <h3>Education</h3>
+                <p>My academic journey from pre-school to engineering</p>
+            </a>
+            <a href="skills.html" class="box">
+                <h3>Technical Skills</h3>
+                <p>Explore my technical expertise and capabilities</p>
+            </a>
+            <a href="cv.html" class="box">
+                <h3>CV</h3>
+                <p>Download my complete curriculum vitae</p>
+            </a>
+            <a href="references.html" class="box">
+                <h3>References</h3>
+                <p>People who can vouch for my abilities</p>
+            </a>
         </div>
-    </section>
-
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <div class="skills-container">
-            <!-- UPDATE THESE SKILLS -->
-            <div class="skill expert">HTML</div>
-            <div class="skill advanced">CSS</div>
-            <div class="skill intermediate">JavaScript</div>
-            <!-- ADD MORE SKILLS -->
-        </div>
-    </section>
-
-    <section id="cv">
-        <h2>Download CV</h2>
-        <!-- REPLACE WITH YOUR ACTUAL PDF FILENAME -->
-        <a href="docs/resume.pdf" download class="cv-button">
-            Download My Resume (PDF)
-        </a>
-    </section>
+    </main>
 
     <footer>
-        <p>© 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
