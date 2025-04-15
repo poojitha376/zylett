@@ -196,7 +196,6 @@ document.addEventListener('DOMContentLoaded', function() {
             'round', 'since', 'through', 'throughout', 'to', 'toward', 'towards', 'under', 
             'underneath', 'until', 'unto', 'up', 'upon', 'with', 'within', 'without'
         ];
-        
         const results = {};
         const words = text.toLowerCase().match(/\b\w+\b/g) || [];
         
